@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /* Main styling for screen and print */
+     
+        .languages { list-style: none; padding: 0; }
+        .bar {
+            background: #eee;
+            border-radius: 6px;
+            overflow: hidden;
+            width: 150px;
+            height: 8px;
+            margin: 4px 0;
+        }
+        .bar span {
+            display: block;
+            height: 100%;
+            background: #4CAF50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: .4cm;
+            color: #333;
+            padding: 1cm;
+            margin: 0 auto;
+            text-align: justify;
+            max-width: 8.5in;
+            font-size: 9pt;
+        }
+        p {
+            margin: 0.4rem 0;
+        }
+        h1 {
+            color: #010408;
+            font-size: 15pt;
+            text-align: center;
+            margin-bottom: 1pt;
+            border-bottom: 1pt solid #eaeaea;
+            padding-bottom: 4pt;
+            page-break-after: avoid;
+        }
+        .contact-info {
+        font-size: 8pt;
+        text-align: center;
+        margin-bottom: 1.2pt;
+        line-height: 2;
+    }
+
+        h2 {
+            color: #01060e;
+            font-size: 11pt;
+            margin: 1pt 0 4pt 0;
+            border-bottom: 1pt solid #eaeaea;
+            padding-bottom: 0.5pt;
+            page-break-after: avoid;
+        }
+        h3 {
+            font-size: 10pt;
+            margin: 6pt 0 0pt 0;
+            page-break-after: avoid;
+        }
+        ul {
+            margin: 2pt 0;
+            padding-left: 16pt;
+        }
+        li {
+            margin-bottom: 2pt;
+            page-break-inside: avoid;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4pt;
+            margin: 8pt 0;
+        }
+        .skills-category {
+            page-break-inside: avoid;
+        }
+        .skills-category h4 {
+            margin: 4pt 0;
+            font-size: 10pt;
+        }
+        .skills-category p {
+            margin: 0;
+            font-size: 10pt;
+        }
+        .date {
+            float: right;
+            color: #666;
+            font-weight: normal;
+        }
+        @media print {
+            @page {
+                size: A4;
+                margin: 0.3in;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Jagan S</h1>
+   <div class="contact-info">+91 8056213780 &nbsp;|&nbsp; ✉️ jagansunil100@gmail.com &nbsp;|&nbsp; 🔗 linkedin.com/in/jagan-sugumaran
+</div>
+
+
+    <h2>SUMMARY</h2>
+    <p>Strong in backend development with Java and Spring Boot, experienced in building secure and scalable applications through internships and projects. Solid in OOP and authentication protocols, with the ability to design efficient systems and quickly adapt to new technologies.
+   
+    <h2>EDUCATION</h2>
+    <h3>B.E. Computer Science and Engineering <span class="date">Oct 2022 - Jul 2026</span></h3>
+    <p>University College of Engineering, Tindivanam<br>
+    CGPA: 8</p>
+
+    <h2>TECHNICAL SKILLS</h2>
+    <div class="skills-grid">
+        <div class="skills-category">
+            <h4>Programming Languages:</h4>
+            <p>Java, Python, C</p>
+        </div>
+        <div class="skills-category">
+            <h4>Web Technologies:</h4>
+            <p>HTML, CSS, TypeScript</p>
+        </div>
+        <div class="skills-category">
+            <h4>Databases:</h4>
+            <p>SQL, Postgresql</p>
+        </div>
+        <div class="skills-category">
+            <h4>Frameworks:</h4>
+            <p>Spring Boot, NestJS</p>
+        </div>
+        <div class="skills-category">
+            <h4>Tools:</h4>
+            <p>Git, VS Code, Postman, Docker, Oracle VirtualBox</p>
+        </div>
+    </div>
+    
+    <h2>INTERNSHIP EXPERIENCE</h2>
+    
+    <h3>AuthAction – Junior Backend Developer Intern <span class="date">May 2025 – June 2025</span></h3>
+    <ul>
+        <li>Developed secure and scalable RESTful APIs using NestJS.</li>
+        <li>Contributed to backend logic and implemented authentication workflows.</li>
+    </ul>
+     <h3>Tata Cybersecurity Security Analyst Job Simulation on Forage  <span class="date">November 2025</span></h3>
+     <ul>
+        <li> Completed a job simulation involving identity and access management (IAM) for Tata Consultancy Services, collaborating with a Cybersecurity Consulting team.</li>
+        <li>Acquired expertise in IAM principles, cybersecurity best practices, and strategic alignment with business objectives.</li>
+        <li> Delivered comprehensive documentation and presentations, showcasing the ability to communicate complex technical concepts effectively.</li>
+        
+    </ul>
+    <h2>PROJECTS</h2>
+    
+    <h3>Currency Converter App (Java, Swing, Gson API)</h3>
+    <ul>
+        <li>Developed a desktop application to convert currency using live exchange rates retrieved.</li>
+    </ul>
+    
+    <h3>ATM Simulator (Java)</h3>
+    <ul>
+        <li>Simulated ATM functionalities such as PIN verification, deposit, withdrawal, and balance inquiry.</li>
+    </ul>
+
+    <h3>JWT Auth API with JWKS Integration (Java, Spring Boot)</h3>
+    <ul>
+        <li>Built a secure backend API with AuthAction authentication using JWTs via client credentials (M2M) flow.</li>
+    </ul>
+    
+    <h3>Passkey Authentication API (TypeScript, NestJS, HTML, CSS)</h3>
+    <ul>
+        <li>Designed an API to support passkey-based authentication for secure login workflows.</li>
+        <li>Enabled seamless interaction between frontend and passkey backend for identity verification and session control.</li>
+    </ul>
+
+   
+
+    <h2>ACHIEVEMENTS</h2>
+    <ul>
+        <li><strong>TechAid Competition Finalist, IIT Bombay (December 2023)</strong>
+            <ul>
+                <li>Top-15 finalist – TechAid, IIT Bombay.</li>
+            </ul>
+        </li>
+        <li><strong>Debate Winner, UCEV College</strong>
+            <ul>
+                <li>Won the college-level debate competition for public speaking and critical thinking.</li>
+            </ul>
+        </li>
+        <li><strong>Young Scientist Program Participant (May 2019)</strong>
+            <ul>
+                <li>Selected participant – Young Student Scientist Programme (YSSP ’19), TN State Council for Science & Tech.</li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+    <h2>CERTIFICATIONS</h2>
+    <ul>
+        <li>Java Fundamentals (Coddy Tech).</li>
+        <li>Google Cloud Data Analytics – Beginner Level.</li>
+        <li>SQL for Beginners (Coddy Tech).</li>
+        <li>Salesforce CRM Development (Naan Mudhalvan).</li>
+    </ul>
+
+    <h2>ADDITIONAL INFORMATION</h2>
+    <ul>
+        <li><strong>Languages:</strong> English(Intermediate), Tamil(Native).</li>
+
+        <li><strong>Volunteer Experience:</strong> NSS, YRC, Placement.</li>
+
+    </ul>
+</body>
+</html>
