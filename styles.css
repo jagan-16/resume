@@ -1,0 +1,109 @@
+/* ============================================================
+   Resume Builder – Stylesheet
+   Extracted from original ATS-friendly template.
+   DO NOT add animations, redesign sections, or modernize UI.
+   ============================================================ */
+
+.languages { list-style: none; padding: 0; }
+.bar {
+    background: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 150px;
+    height: 8px;
+    margin: 4px 0;
+}
+.bar span {
+    display: block;
+    height: 100%;
+    background: #4CAF50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: .4cm;
+    color: #333;
+    padding: 1cm;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 8.5in;
+    font-size: 9pt;
+}
+p {
+    margin: 0.4rem 0;
+}
+h1 {
+    color: #010408;
+    font-size: 15pt;
+    text-align: center;
+    margin-bottom: 1pt;
+    border-bottom: 1pt solid #eaeaea;
+    padding-bottom: 4pt;
+    page-break-after: avoid;
+}
+.contact-info {
+    font-size: 8pt;
+    text-align: center;
+    margin-bottom: 1.2pt;
+    line-height: 2;
+}
+h2 {
+    color: #01060e;
+    font-size: 9pt;
+    margin: 1pt 0 4pt 0;
+    border-bottom: 1pt solid #eaeaea;
+    padding-bottom: 0.5pt;
+    page-break-after: avoid;
+}
+h3 {
+    font-size: 9pt;
+    margin: 1pt 0 0pt 0;
+    page-break-after: avoid;
+}
+ul {
+    margin: 1pt 0;
+    padding-left: 16pt;
+}
+li {
+    margin-bottom: 2pt;
+    page-break-inside: avoid;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4pt;
+    margin: 8pt 0;
+}
+.skills-category {
+    page-break-inside: avoid;
+}
+.skills-category h4 {
+    margin: 4pt 0;
+    font-size: 9pt;
+    padding-bottom: 0pt;
+    padding-top: 0pt;
+}
+.skills-category p {
+    margin: 0;
+    font-size: 9pt;
+}
+.date {
+    float: right;
+    color: #666;
+    font-weight: normal;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 0.3in;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
