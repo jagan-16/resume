@@ -4,3 +4,4 @@ resumes/
 .resume_builder_last_open
 package-lock.json
 package.json
+venv/
